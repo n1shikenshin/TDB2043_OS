@@ -8,11 +8,11 @@
 
 ## 🧪 Lab Tasks Overview
 
-| 📅 **Date** | 🧠 **Topic** | 💻 **Lab Tasks** |
-|-------------|--------------|------------------|
-| 25/09/25 | **Struct** | [🧩 **Task 01**](https://github.com/n1shikenshin/TEB1113_ADS/blob/main/25_09_25/task1.cpp) |
-| 25/10/02 | **Matrix** | [🟢 **Task 01 - Easy**](https://github.com/n1shikenshin/TEB1113_ADS/blob/main/25_10_02/task2_easy.cpp)<br>[🟡 **Task 02 - Medium**](https://github.com/n1shikenshin/TEB1113_ADS/blob/main/25_10_02/task2_medium.cpp)<br>[🔴 **Task 03 - Hard**](https://github.com/n1shikenshin/TEB1113_ADS/blob/main/25_10_02/task2_hard.cpp) |
-| 25/10/09 | **Linked List** | [🔗 **Task 01 - Single Linked List**](https://github.com/n1shikenshin/TEB1113_ADS/blob/main/25_10_16-Task1/task_1.cpp)<br>[🔁 **Task 02 - Double Linked List**](https://github.com/n1shikenshin/TEB1113_ADS/blob/main/25_10_16-Task1/task_2.cpp) |
+| 📅 **Date** | 💻 **Lab Tasks** |
+|-------------|------------------|
+| 25/10/02 | 🧩 [**Task 01 - System Calls of UNIX (opendir, readdir, closedir)**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_02/task1.cpp)<br>🔧 [**Task 02 - System Calls of UNIX (fork, getpid, exit)**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_02/task2.cpp) |
+| 25/10/09 | 🗂️ [**Task 01 - Simulation of cp Command**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_09/task1.cpp)<br>📁 [**Task 02 - Simulation of ls Command**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_09/task2.cpp)<br>🔍 [**Task 03 - Simulation of grep Command**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_09/task3.cpp) |
+| 25/10/16 | 💡 [**Task 01 - Shell Program: Even or Odd**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_16/task1.sh)<br>🌙 [**Task 02 - Shell Program: Checking Leap Year**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_16/task2.sh)<br>🧮 [**Task 03 - Shell Program: Factorial of a Number**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_16/task3.sh)<br>🔁 [**Task 04 - Shell Program: Swap Two Numbers**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_16/task4.sh) |
 
 ---
 
@@ -24,10 +24,14 @@ Code is written in **C++** and follows clean, readable standards.
 
 ---
 
-## 🧰 Tech Stack
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+## 🧰 Tools & Technologies
+
+![C Language](https://img.shields.io/badge/C%20Language-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Shell Script](https://img.shields.io/badge/Shell%20Script-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode)
+
 
 ---
 

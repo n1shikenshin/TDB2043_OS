@@ -1,93 +1,90 @@
+/* 
+Step-1: Start the program.
+Step-2: Declare the memory for the process.
+Step-3: Read the number of process, resources, allocation matrix and available matrix. 
+Step-4: Compare each and every process using the banker‟s algorithm.
+Step-5: If the process is in safe state then it is a not a deadlock process otherwise it is a deadlock process
+Step-6: produce the result of state of process 
+Step-7: Stop the program
+ */ 
+
 #include <stdio.h>
 
 int max[100][100];
-int alloc[100][100]
-int need[100][100]
-int avail[100]
+int alloc[100][100];
+int need[100][100];
+int avail[100];
 int n, r;
 
 void input();
 void show();
 void calculate();
 
-int main()
-{
-	printf("********* BANKER'S ALGORITHM **********\n\n");
-	input();
-	show();
-	calculate();
-	return 0;
+int main() {
+    printf("********** BANKER'S ALGORITHM ************\n\n");
+    input();
+    show();
+    calculate();
+    return 0;
 }
 
-// Input function
+//-------------------- INPUT FUNCTION ---------------------
+void input() {
+    int i, j;
+    printf("Enter the number of processes: ");
+    scanf("%d", &n);
+    printf("Enter the number of resource types: ");
+    scanf("%d", &r);
 
-void input()
-{
-	int i, j;
-	printf("Enter the number of processes: ");
-	scanf("%d ", &n);
-	printf("Enter the number of resources types: ");
-	scanf("%d ", &r);
+    printf("\n--- Enter MAX matrix values ---\n");
+    for (i = 0; i < n; i++) {
+        printf("Process P%d:\n", i + 1);
+        for (j = 0; j < r; j++) {
+            printf("  Maximum need of Resource R%d: ", j + 1);
+            scanf("%d", &max[i][j]);
+        }
+    }
 
-	printf("\n--- Enter MAX matrix values ---\n");
-	for (i=0; i<n; i++)
-	{
-		printf("Process P%d:\n", i+1);
-		for (j=0; j<r; j++)
-		{
-			printf(" Maximum need of Resource R%d: ", j+1);
-			scanf("%d ", &max[i][j]);
-		}
-	}
+    printf("\n--- Enter ALLOCATION matrix values ---\n");
+    for (i = 0; i < n; i++) {
+        printf("Process P%d:\n", i + 1);
+        for (j = 0; j < r; j++) {
+            printf("  Resources of type R%d currently allocated: ", j + 1);
+            scanf("%d", &alloc[i][j]);
+        }
+    }
 
-	printf("\n--- Enter ALLOCATION matrix values ---\n");
-	for (i=0; i<n; i++)
-	{
-		printf("Process P%d:\n", i+1);
-		for (j=0; j<r; j++)
-		{
-			printf(" Resources of type R%d currenty allocated: ",j+1);
-			scanf("%d ", &alloc[i][j]);
-		}
-	}
-
-	printf("\n--- Enter AVAILABLE resoruces ---\n");
-	for (j=0; j<r; j++)
-	{
-		printf("Available instances of Resources R%d: ", j+1);
-		scanf("%d ", &avail[j]);
-	}
+    printf("\n--- Enter AVAILABLE resources ---\n");
+    for (j = 0; j < r; j++) {
+        printf("Available instances of Resource R%d: ", j + 1);
+        scanf("%d", &avail[j]);
+    }
 }
 
-//Display Function
-
-void show()
-{
-	int i, j;
-	printf("\n---------------------------------------------------------\n");
-	printf("Process\t\tAllocation\t\tMax\t\tAvaialble\n");
-	printf("\n---------------------------------------------------------\n");
-	for (i=0; i<n; i++)
-	{
-		printf("P%d\t\t", i+1);
-		for (j=0; j<r; j++)
-			printf("%d", alloc[i][j]);
-		printf("\t\t");
-		for (j=0; j<r; j++)
-			printf("%d", max[i][j]);
-		printf("\t\t");
-		if (i==0)
-		{
-			for (j=0; j<r; j++)
-				printf("%d ", avail[j]);
-		}
-		printf("\n");
-	}
-	printf("---------------------------------------------------------\n");
+//-------------------- DISPLAY FUNCTION ---------------------
+void show() {
+    int i, j;
+    printf("\n-------------------------------------------------------------\n");
+    printf("Process\t\tAllocation\t\tMax\t\tAvailable\n");
+    printf("-------------------------------------------------------------\n");
+    for (i = 0; i < n; i++) {
+        printf("P%d\t\t", i + 1);
+        for (j = 0; j < r; j++)
+            printf("%d ", alloc[i][j]);
+        printf("\t\t");
+        for (j = 0; j < r; j++)
+            printf("%d ", max[i][j]);
+        printf("\t\t");
+        if (i == 0) { // only display available once
+            for (j = 0; j < r; j++)
+                printf("%d ", avail[j]);
+        }
+        printf("\n");
+    }
+    printf("-------------------------------------------------------------\n");
 }
 
-//Calculation function
-
+//-------------------- CALCULATION FUNCTION ---------------------
 void calculate() {
     int finish[100] = {0}, safeSeq[100];
     int work[100];

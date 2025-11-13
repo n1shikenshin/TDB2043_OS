@@ -16,6 +16,8 @@
 | 25/10/23 | 🧩 [**Task 01 - CPU Scheduling Algorithm - Priority**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_23/task1.c)<br>⚙️ [**Task 02 - CPU Scheduling Algorithm - Round Robin**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_23/task2.c)<br>🧮 [**Task 03 - CPU Scheduling Algorithm - FCFS**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_23/task3.c)<br>⚡ [**Task 04 - CPU Scheduling Algorithm - SJF**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_23/task4.c) |
 | 25/10/30 | 🧩 [**Task 01 - Producer Consumer Problem Using Semaphores)**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_30/task1.c)<br>🔧 [**Task 02 - IPC Using Shared Memory**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_10_30/task2.c) |
 | 25/11/06 | 🏦 [**Task 01 - Bankers Algorithm for Deadlock Avoidance**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_11_6/task1.c)<br>💻 [**Task 02 - Algorithm for Deadlock Detection**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_11_6/task2.c)<br>🧵 [**Task 03 - Threading & Synchronization Applications**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_11_6/task3.c) |
+| 25/11/13 | 🏦 [**Task 01 - Memory Allocation Methods For Fixed Partition - Fit**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_11_13/task1.c)<br>💻 [**Task 02 - Memory Allocation Methods For Fixed Partition - Worst Fit**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_11_13/task2.c)<br>🧵 [**Task 03 - Memory Allocation Methods For Fixed Partition - Best Fit**](https://github.com/n1shikenshin/TDB2043_OS/blob/main/25_11_13/task3.c) |
+
 
 ---
 
